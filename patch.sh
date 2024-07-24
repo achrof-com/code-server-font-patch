@@ -14,7 +14,7 @@ if [ -z "$CODE_SERVER_PATH" -o ! -d "$WORKBENCH_PATH" ]; then
   exit 1
 fi
 
-if ! grep -q "/* ::CUSTOM VSCODE FONTS:: */" "$WORKBENCH_CSS_PATH"; then
+if ! grep -q "/* ::HACK NERD VSCODE FONTS:: */" "$WORKBENCH_CSS_PATH"; then
   # Copy fonts to $WORKBENCH_PATH
   cp -rn ./resources/fonts "$WORKBENCH_PATH/"
 
